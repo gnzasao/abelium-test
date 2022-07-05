@@ -1,0 +1,8 @@
+<div *ngIf="player">
+    <h2>{{player.name | uppercase}} ({{player.team}})</h2>
+    <ul>
+        <li>Height: {{player.height}} cm</li>
+        <li>Age: {{player.age}}</li> 
+    </ul>
+    <button type="button" (click)="goBack()">go back</button>
+</div>

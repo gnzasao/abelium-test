@@ -1,0 +1,23 @@
+
+<h2>Home</h2>
+<nav>
+    <a routerLink="/home">Home</a>
+    <div *ngFor="let player of players">
+      <a routerLink="/detail/{{player.id}}">
+        <span class="name">{{player.name}}</span>
+      </a>
+    </div>
+    <a routerLink="/activity">User Activity</a>
+</nav>
+
+
+
+<!-- <h2>Players</h2>
+<ul class="players">
+  <li *ngFor="let player of players">
+    <a routerLink="/detail/{{player.id}}">
+      <span class="name">{{player.name}}</span>
+    </a>
+  </li>
+</ul> -->
+
